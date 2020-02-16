@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+<span class="tab">
+    <br>
+        <label for="eType">Event Type:</label>
+        <select name="evType" id = "eType" required>
+          <option value = "0">Choose one</option>
+          <option value = "1">Option one</option>
+          <option value = "2">Option two</option>
+          <option value = "3">Option three</option>
+        </select><br>
+
+
+        <label for ="eTitle" >Event Title:</label>
+        <input type = "text" style="width:80%" name = "evTitle" id = "eTitle" required><br/>        
+
+        <label for ="eDateStart">Event Dates:</label>
+        <input type = "date" name = "evDateStart" id = "eDateStart" required>
+        to
+        <input type = "date" name = "evDateEnd" id = "eDateEnd" required>
+        <br/>
+
+
+        <label for ="ePostDate">Posting Date:</label>
+        <input type = "date" name = "evPostDate" id = "ePostDate" required><br>
+        
+        
+        <input type="checkbox" id="eRegReq" name="evRegReq" value="True">
+        <label for="eRegReq">Is Registration Requierd?</label><br>        
+
+        <input type="checkbox" id="eFamAssoc" name="evFamAssoc" value="True">
+        <label for="eFamAssoc">Is this event associated with any Family Programs</label><br> 
+
+        <input type="checkbox" id="eAutomail" name="evAutomail" value="True">
+        <label for="eAutomail">Upon Registration Completion, Are Users to Recieve an Auto Generated Email?</label><br> 
+
+        <input type="checkbox" id="ePOC" name="evPOC" value="True">
+        <label for="ePOC">Is There a Point of Contact</label><br> 
+
+        <input type="checkbox" id="eHCPOC" name="evHCPOC" value="True">
+        <label for="eHCPOC">Is There a Hosting Command Point of Contact</label><br>
+  <br><br>
+<center>
+        <input type="button" value="Save" onclick="save()">
+        <input type="button" value="Cancel" onclick="msg()"><br>
+</center>        
+</span>
+       
+    
+        <script src="./script.JS" async defer></script>
+    </body>
+</html>
